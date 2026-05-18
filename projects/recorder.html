@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>记录仪管理平台 · 案例分析 | 徐静波</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<nav>
+  <a href="../index.html" class="logo">徐静波</a>
+  <ul class="nav-links">
+    <li><a href="../index.html">项目</a></li>
+    <li><a href="../about.html">关于</a></li>
+  </ul>
+</nav>
+
+<div class="container">
+  <div class="page-header">
+    <a href="../index.html" class="back-link">← 返回项目列表</a>
+    <h1>记录仪管理平台</h1>
+    <p class="meta">杭州诚泰科技 · 产品负责人 · 2025.03 ~ 2026.05 · 0-1 搭建</p>
+  </div>
+
+  <div class="demo-banner">
+    <p>该项目已有可交互的前端 Demo，点击下方按钮在线体验</p>
+    <a href="http://localhost:3001" class="demo-btn" target="_blank">在线演示 →</a>
+  </div>
+
+  <div class="content-block">
+    <h2>项目背景</h2>
+    <p>执法记录仪是公安系统日常执勤的核心装备，但传统管理方式依赖人工台账，设备状态不透明、数据分散、维保流程不闭环。该项目旨在为公安客户提供一套从设备入库、分配到报废的全生命周期管理平台，同时管理采集站和音视频数据。</p>
+  </div>
+
+  <div class="content-block">
+    <h2>产品目标</h2>
+    <ul>
+      <li>建立记录仪设备的统一台账，实现从入库、分配、回收到报废的闭环管理</li>
+      <li>接入采集站管理，实时监控存储容量、在线状态、数据上传情况</li>
+      <li>提供音视频数据的多维度检索、在线预览和安全归档能力</li>
+      <li>满足警务场景下的角色权限隔离、操作审计和数据安全合规要求</li>
+    </ul>
+  </div>
+
+  <div class="content-block">
+    <h2>核心模块设计</h2>
+    <div class="module-list">
+      <div class="module-card">
+        <h4>首页大屏</h4>
+        <p>设备总览、近7/30天使用趋势、数据上传量、异常排行等关键指标可视化</p>
+      </div>
+      <div class="module-card">
+        <h4>设备台账</h4>
+        <p>设备列表、详情、新增入库（单台/批量导入）、分配/回收/解绑、扫码盘点</p>
+      </div>
+      <div class="module-card">
+        <h4>采集站管理</h4>
+        <p>采集站台账、实时状态监控、存储策略配置、远程固件升级、异常告警</p>
+      </div>
+      <div class="module-card">
+        <h4>数据管理</h4>
+        <p>按设备/时间/标签多维度检索、在线预览播放、批量导出、定时归档与删除</p>
+      </div>
+      <div class="module-card">
+        <h4>人员管理</h4>
+        <p>组织架构同步、人员增删改查、角色绑定、设备使用记录追溯</p>
+      </div>
+      <div class="module-card">
+        <h4>系统设置</h4>
+        <p>角色权限配置、菜单/按钮级权限控制、组织级数据隔离、操作审计日志</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="content-block">
+    <h2>权限体系设计</h2>
+    <p>针对公安系统多层级组织架构，设计三级角色权限模型：</p>
+    <ul>
+      <li><strong>超级管理员</strong>：全局配置、系统参数、全部数据访问</li>
+      <li><strong>设备管理员</strong>：管理所辖组织的设备台账、分配回收、维保操作</li>
+      <li><strong>数据审核员</strong>：查看数据、审核关键操作、导出审计日志</li>
+      <li><strong>普通查看员</strong>：查看本组织数据、只读权限</li>
+    </ul>
+    <p style="margin-top:10px;">数据权限按组织层级隔离，上级可查看下级数据，同级之间数据隔离，确保"谁的数据谁看到"。</p>
+  </div>
+
+  <div class="content-block">
+    <h2>产品成果</h2>
+    <ul>
+      <li>0-1 完成产品功能框架设计，输出完整功能清单与交互原型</li>
+      <li>覆盖 6 大核心模块、30+ 子功能点</li>
+      <li>设计方案满足公安系统数据安全合规与操作审计要求</li>
+    </ul>
+  </div>
+
+</div>
+
+<footer class="container">
+  <p>徐静波 &copy; 2025 &nbsp;|&nbsp; xjb13464056716@163.com</p>
+</footer>
+
+</body>
+</html>

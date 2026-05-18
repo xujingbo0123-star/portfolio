@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>资产管理平台 · 案例分析 | 徐静波</title>
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+
+<nav>
+  <a href="../index.html" class="logo">徐静波</a>
+  <ul class="nav-links">
+    <li><a href="../index.html">项目</a></li>
+    <li><a href="../about.html">关于</a></li>
+  </ul>
+</nav>
+
+<div class="container">
+  <div class="page-header">
+    <a href="../index.html" class="back-link">← 返回项目列表</a>
+    <h1>资产管理平台案例</h1>
+    <p class="meta">含警务资产管理平台（诚泰）与资囊国有资产管理平台（众博）两个项目经验</p>
+  </div>
+
+  <!-- ===== 警务资产管理平台 ===== -->
+  <div class="content-block" id="police">
+    <h2>警务资产管理平台 <span style="font-size:14px;font-weight:400;color:var(--text-secondary);">迭代升级 · 诚泰科技</span></h2>
+    <p>面向公安系统的国有资产管理平台，服务诸暨、绍兴、临平、丽水、嘉兴等地客户，覆盖资产从采购入库、日常使用到报废处置的全生命周期。</p>
+  </div>
+
+  <div class="content-block">
+    <h2>我的职责</h2>
+    <ul>
+      <li><strong>需求管理</strong>：对接客户与业务方，收集整理需求并建立需求池，完成竞品功能分析，输出功能清单与需求说明文档</li>
+      <li><strong>产品设计</strong>：输出核心模块的业务流程图、原型图及交互说明</li>
+      <li><strong>权限体系</strong>：梳理并落地三级 RBAC 权限模型（单位管理员 / 部门管理员 / 普通用户）</li>
+      <li><strong>项目推进</strong>：协调开发、测试、运维完成版本迭代，跟进用户反馈并持续优化</li>
+    </ul>
+  </div>
+
+  <div class="content-block">
+    <h2>核心功能模块</h2>
+    <div class="module-list">
+      <div class="module-card">
+        <h4>工作台</h4>
+        <p>待办事项、快捷入口、资产统计、公告通知、盘点提醒等聚合首页</p>
+      </div>
+      <div class="module-card">
+        <h4>资产台账</h4>
+        <p>多视图展示（组织/分类/区域）、多维度筛选、固定列、切换卡片样式、导入导出</p>
+      </div>
+      <div class="module-card">
+        <h4>入库管理</h4>
+        <p>单条/批量入库、草稿保存、编码规则配置、打印导出</p>
+      </div>
+      <div class="module-card">
+        <h4>领用 & 退还</h4>
+        <p>领用申请→审批→发放；退还申请→审批→资产收回；支持批量接收人</p>
+      </div>
+      <div class="module-card">
+        <h4>借用 & 归还</h4>
+        <p>借出/借入状态区分、催还提醒、续借申请、归还流程闭环</p>
+      </div>
+      <div class="module-card">
+        <h4>资产调拨</h4>
+        <p>单位间调拨（平台内/外两种模式）、调拨登记、确认/取消调拨</p>
+      </div>
+      <div class="module-card">
+        <h4>盘点管理</h4>
+        <p>盘点任务创建与分配、清单生成、差异上报、结果确认与调整</p>
+      </div>
+      <div class="module-card">
+        <h4>报废处置</h4>
+        <p>报废申请→评估→审批→注销→残值处置全流程</p>
+      </div>
+    </div>
+  </div>
+
+  <div class="content-block">
+    <h2>统计分析报表</h2>
+    <p>设计 15+ 种统计报表，满足不同角色的数据查询需求：</p>
+    <div class="feature-grid">
+      <div class="feature-item">资产全表</div>
+      <div class="feature-item">资产履历</div>
+      <div class="feature-item">资产使用情况</div>
+      <div class="feature-item">资产部门汇总</div>
+      <div class="feature-item">资产分类汇总</div>
+      <div class="feature-item">资产区域汇总</div>
+      <div class="feature-item">月增加对账表</div>
+      <div class="feature-item">到期资产报表</div>
+      <div class="feature-item">资产报废清单</div>
+      <div class="feature-item">月折旧报表</div>
+      <div class="feature-item">维保到期统计</div>
+      <div class="feature-item">呆滞资产清单</div>
+      <div class="feature-item">人员资产统计</div>
+      <div class="feature-item">闲置资产清单</div>
+      <div class="feature-item">资产分类增减表</div>
+    </div>
+  </div>
+
+  <div class="content-block">
+    <h2>权限体系设计</h2>
+    <p>设计三级 RBAC 权限模型，实现菜单级、按钮级功能权限与组织级数据隔离：</p>
+    <ul>
+      <li><strong>单位管理员</strong>：查看全单位所有资产数据，执行所有业务操作，管理单位/用户/角色/字典/参数</li>
+      <li><strong>部门管理员</strong>：管理本部门及子部门资产，可操作部门闲置资产分配、回收、转移、维修、盘点</li>
+      <li><strong>普通用户</strong>：仅能查看和操作自己名下的资产，可发起领用/借用/退还申请</li>
+    </ul>
+  </div>
+
+  <!-- ===== 资囊平台 ===== -->
+  <div class="content-block" id="zisang" style="margin-top:60px;">
+    <h2>资囊国有资产管理平台 <span style="font-size:14px;font-weight:400;color:var(--text-secondary);">0-1 搭建 · 众博数智科技</span></h2>
+    <p>面向地方政府的国有资产统计、管理与盘活平台。从零参与产品规划到交付落地。</p>
+  </div>
+
+  <div class="content-block">
+    <h2>我的职责</h2>
+    <ul>
+      <li>开展用户调研与竞品动态分析，建立需求池并完成产品规划与功能定义</li>
+      <li>输出产品设计说明文档及原型，包括业务流程图、功能定义及交互逻辑</li>
+      <li>负责项目优先级裁定与进度管控，协调多方完成版本迭代</li>
+      <li>推动产品上线后的用户反馈收集、培训及跨部门信息传达</li>
+    </ul>
+  </div>
+
+  <div class="content-block">
+    <h2>工作业绩</h2>
+    <ul>
+      <li>平台被诸暨、绍兴、临平、丽水、嘉兴等地方政府采购使用</li>
+      <li>使政府国有资产监管与盘活效率<span style="font-weight:700;color:var(--accent);">提升 60%</span></li>
+    </ul>
+  </div>
+
+</div>
+
+<footer class="container">
+  <p>徐静波 &copy; 2025 &nbsp;|&nbsp; xjb13464056716@163.com</p>
+</footer>
+
+</body>
+</html>
